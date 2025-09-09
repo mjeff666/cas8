@@ -7,9 +7,9 @@ type Casino = {
 };
 
 const casinos: Casino[] = [
-  { id: "casino777", rank: 1, name: "Casino777.lv", logo: "/logos/casino777.png", domain: "https://casino777.lv", rating: 5.0, bonus: "До 200% и до 150 фриспинов", payoutSpeed: "Моментально", games: 2500, minDeposit: "€5", support: "24/7 Live Chat", license: "IAUI (Latvia)", pros: ["Моментальная верификация","Щедрые акции","Удобная мобильная версия"], cons: ["Не все провайдеры доступны из EU без VPN"], tags: ["Latvia","Top Pick","Fast Payouts"] },
-  { id: "luckybet", rank: 2, name: "LuckyBet.lv", logo: "/logos/luckybet.png", domain: "https://luckybet.lv", rating: 5.0, bonus: "150% до €300", payoutSpeed: "До 12 часов", games: 2200, minDeposit: "€10", support: "24/7 Live Chat", license: "IAUI (Latvia)", pros: ["Топ-2 в Латвии","Стабильные выплаты","Удобные лимиты"], cons: ["Высокая нагрузка по вечерам"], tags: ["Latvia","Editor’s Choice"] },
-  { id: "optibet", rank: 3, name: "Optibet.lv", logo: "/logos/optibet.png", domain: "https://www.optibet.lv", rating: 3.4, bonus: "До €100", payoutSpeed: "1–2 дня", games: 1800, minDeposit: "€10", support: "10:00–22:00", license: "IAUI (Latvia)", pros: ["Известный бренд"], cons: ["Средние бонусы"], tags: ["Latvia"] },
+  { id: "casino777", rank: 1, name: "Casino777.lv", logo: "/logos/casino777.png", domain: "https://casino777.lv", rating: 5.0, bonus: "До 200% и до 150 фриспинов", payoutSpeed: "Моментально", games: 5000, minDeposit: "€10", support: "24/7 Live Chat", license: "IAUI (Latvia)", pros: ["Моментальная верификация","Щедрые акции","Удобная мобильная версия"], cons: ["Не все провайдеры доступны из EU без VPN"], tags: ["Latvia","Top Pick","Fast Payouts"] },
+  { id: "luckybet", rank: 2, name: "LuckyBet.lv", logo: "/logos/luckybet.png", domain: "https://luckybet.lv", rating: 5.0, bonus: "150% до €300", payoutSpeed: "До 3 часов", games: 2700, minDeposit: "€10", support: "24/7 Live Chat", license: "IAUI (Latvia)", pros: ["Топ-2 в Латвии","Стабильные выплаты","Удобные лимиты"], cons: ["Высокая нагрузка по вечерам"], tags: ["Latvia","Editor’s Choice"] },
+  { id: "optibet", rank: 3, name: "Optibet.lv", logo: "/logos/optibet.png", domain: "https://www.optibet.lv", rating: 3.4, bonus: "До €100", payoutSpeed: "1–2 дня", games: 1800, minDeposit: "€20", support: "10:00–22:00", license: "IAUI (Latvia)", pros: ["Известный бренд"], cons: ["Средние бонусы"], tags: ["Latvia"] },
   { id: "11lv", rank: 4, name: "11.lv", logo: "/logos/11lv.png", domain: "https://www.11.lv", rating: 3.2, bonus: "Фриспины на старте", payoutSpeed: "1–3 дня", games: 1500, minDeposit: "€10", support: "10:00–22:00", license: "IAUI (Latvia)", pros: ["Простой интерфейс"], cons: ["Небольшой выбор игр"], tags: ["Latvia"] },
   { id: "betsafe", rank: 5, name: "Betsafe.lv", logo: "/logos/betsafe.png", domain: "https://www.betsafe.lv", rating: 3.0, bonus: "€50 на депозит", payoutSpeed: "1–3 дня", games: 1700, minDeposit: "€10", support: "Ежедневно", license: "IAUI (Latvia)", pros: ["Надёжный оператор"], cons: ["Обычные условия"], tags: ["Latvia"] },
   { id: "pafbet", rank: 6, name: "Pafbet.lv", logo: "/logos/pafbet.png", domain: "https://www.pafbet.lv", rating: 2.9, bonus: "До €50", payoutSpeed: "2–3 дня", games: 1200, minDeposit: "€10", support: "Рабочие часы", license: "IAUI (Latvia)", pros: ["Социальная ответственность"], cons: ["Мало провайдеров"], tags: ["Latvia"] },
@@ -248,7 +248,7 @@ export default function App() {
                     <tr key={`p-${c.id}`} className="hover:bg-white/5">
                       <td className="px-3 py-2">{c.name}</td>
                       <td className="px-3 py-2">{c.payoutSpeed}</td>
-                      <td className="px-3 py-2">€5–€5,000/день (пример)</td>
+                      <td className="px-3 py-2">€5–€5,000/день </td>
                       <td className="px-3 py-2">{c.support}</td>
                       <td className="px-3 py-2">{c.rating.toFixed(1)}</td>
                     </tr>
